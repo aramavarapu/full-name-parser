@@ -21,9 +21,12 @@ public class FullNameParserApplication {
             middleName = "(none)";
             lastName = rest;
         } else {
-            middleName = rest.substring(0. secondSpace);
-            lastName = rest.subString(secondSpace +1);
+            middleName = rest.substring(0, secondSpace);
+            lastName = rest.substring(secondSpace +1);
         }
+        System.out.println("First name: " + firstName);
+        System.out.println("Middle name: " + middleName);
+        System.out.println("Last name: "+ lastName);
     }
 
 
