@@ -11,6 +11,19 @@ public class FullNameParserApplication {
         int firstSpace = fullName.indexOf(" ");
         String firstName = fullName.substring(0, firstSpace);
         String rest = fullName.substring(firstSpace + 1);
+
+        String middleName;
+        String lastName;
+
+        int secondSpace = rest.indexOf(" ");
+
+        if (secondSpace == -1) {
+            middleName = "(none)";
+            lastName = rest;
+        } else {
+            middleName = rest.substring(0. secondSpace);
+            lastName = rest.subString(secondSpace +1);
+        }
     }
 
 
